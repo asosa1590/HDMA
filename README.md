@@ -350,3 +350,129 @@ Signif. codes:
 Residual standard error: 0.1501 on 361612 degrees of freedom
 Multiple R-squared:  0.006085,	Adjusted R-squared:  0.005887 
 F-statistic: 30.75 on 72 and 361612 DF,  p-value: < 2.2e-16
+
+
+
+
+ purchaserregression <- lm(Loan_Approved ~ purchaser_type_name + hud_median_family_income + Hispanic_or_Latino + Not_Hispanic_or_Latino + American_Indian_or_Alaska_Native + Asian + Black + Native_Hawaiian_or_P.Islander + loan_amount_000s + minority_population )
+> summary(purchaserregression)
+
+Call:
+lm(formula = Loan_Approved ~ purchaser_type_name + hud_median_family_income + 
+    Hispanic_or_Latino + Not_Hispanic_or_Latino + American_Indian_or_Alaska_Native + 
+    Asian + Black + Native_Hawaiian_or_P.Islander + loan_amount_000s + 
+    minority_population)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.12090 -0.37990 -0.00022  0.30787  1.08219 
+
+Coefficients:
+                                                                                                  Estimate
+(Intercept)                                                                                      8.089e-01
+purchaser_type_nameCommercial bank, savings bank or savings association                          1.336e-01
+purchaser_type_nameFannie Mae (FNMA)                                                            -4.239e-02
+purchaser_type_nameFarmer Mac (FAMC)                                                             1.028e-01
+purchaser_type_nameFreddie Mac (FHLMC)                                                          -4.475e-02
+purchaser_type_nameGinnie Mae (GNMA)                                                            -7.123e-02
+purchaser_type_nameLife insurance company, credit union, mortgage bank, or finance company       1.277e-01
+purchaser_type_nameLoan was not originated or was not sold in calendar year covered by register -4.791e-01
+purchaser_type_nameOther type of purchaser                                                       1.091e-01
+purchaser_type_namePrivate securitization                                                        4.620e-02
+hud_median_family_income                                                                        -1.254e-06
+Hispanic_or_Latino                                                                               1.720e-01
+Not_Hispanic_or_Latino                                                                           2.242e-01
+American_Indian_or_Alaska_Native                                                                -5.532e-02
+Asian                                                                                            5.654e-02
+Black                                                                                           -5.523e-02
+Native_Hawaiian_or_P.Islander                                                                   -4.558e-02
+loan_amount_000s                                                                                -4.012e-05
+minority_population                                                                             -1.577e-03
+                                                                                                Std. Error
+(Intercept)                                                                                      6.616e-03
+purchaser_type_nameCommercial bank, savings bank or savings association                          6.473e-03
+purchaser_type_nameFannie Mae (FNMA)                                                             5.803e-03
+purchaser_type_nameFarmer Mac (FAMC)                                                             1.876e-01
+purchaser_type_nameFreddie Mac (FHLMC)                                                           5.959e-03
+purchaser_type_nameGinnie Mae (GNMA)                                                             6.073e-03
+purchaser_type_nameLife insurance company, credit union, mortgage bank, or finance company       6.250e-03
+purchaser_type_nameLoan was not originated or was not sold in calendar year covered by register  5.553e-03
+purchaser_type_nameOther type of purchaser                                                       6.971e-03
+purchaser_type_namePrivate securitization                                                        1.401e-02
+hud_median_family_income                                                                         4.286e-08
+Hispanic_or_Latino                                                                               3.181e-03
+Not_Hispanic_or_Latino                                                                           2.017e-03
+American_Indian_or_Alaska_Native                                                                 1.015e-02
+Asian                                                                                            2.813e-03
+Black                                                                                            3.007e-03
+Native_Hawaiian_or_P.Islander                                                                    1.245e-02
+loan_amount_000s                                                                                 3.907e-06
+minority_population                                                                              2.895e-05
+                                                                                                t value
+(Intercept)                                                                                     122.256
+purchaser_type_nameCommercial bank, savings bank or savings association                          20.646
+purchaser_type_nameFannie Mae (FNMA)                                                             -7.305
+purchaser_type_nameFarmer Mac (FAMC)                                                              0.548
+purchaser_type_nameFreddie Mac (FHLMC)                                                           -7.510
+purchaser_type_nameGinnie Mae (GNMA)                                                            -11.729
+purchaser_type_nameLife insurance company, credit union, mortgage bank, or finance company       20.425
+purchaser_type_nameLoan was not originated or was not sold in calendar year covered by register -86.284
+purchaser_type_nameOther type of purchaser                                                       15.649
+purchaser_type_namePrivate securitization                                                         3.298
+hud_median_family_income                                                                        -29.266
+Hispanic_or_Latino                                                                               54.057
+Not_Hispanic_or_Latino                                                                          111.131
+American_Indian_or_Alaska_Native                                                                 -5.449
+Asian                                                                                            20.101
+Black                                                                                           -18.364
+Native_Hawaiian_or_P.Islander                                                                    -3.661
+loan_amount_000s                                                                                -10.268
+minority_population                                                                             -54.480
+                                                                                                Pr(>|t|)
+(Intercept)                                                                                      < 2e-16
+purchaser_type_nameCommercial bank, savings bank or savings association                          < 2e-16
+purchaser_type_nameFannie Mae (FNMA)                                                            2.79e-13
+purchaser_type_nameFarmer Mac (FAMC)                                                            0.583475
+purchaser_type_nameFreddie Mac (FHLMC)                                                          5.94e-14
+purchaser_type_nameGinnie Mae (GNMA)                                                             < 2e-16
+purchaser_type_nameLife insurance company, credit union, mortgage bank, or finance company       < 2e-16
+purchaser_type_nameLoan was not originated or was not sold in calendar year covered by register  < 2e-16
+purchaser_type_nameOther type of purchaser                                                       < 2e-16
+purchaser_type_namePrivate securitization                                                       0.000975
+hud_median_family_income                                                                         < 2e-16
+Hispanic_or_Latino                                                                               < 2e-16
+Not_Hispanic_or_Latino                                                                           < 2e-16
+American_Indian_or_Alaska_Native                                                                5.07e-08
+Asian                                                                                            < 2e-16
+Black                                                                                            < 2e-16
+Native_Hawaiian_or_P.Islander                                                                   0.000252
+loan_amount_000s                                                                                 < 2e-16
+minority_population                                                                              < 2e-16
+                                                                                                   
+(Intercept)                                                                                     ***
+purchaser_type_nameCommercial bank, savings bank or savings association                         ***
+purchaser_type_nameFannie Mae (FNMA)                                                            ***
+purchaser_type_nameFarmer Mac (FAMC)                                                               
+purchaser_type_nameFreddie Mac (FHLMC)                                                          ***
+purchaser_type_nameGinnie Mae (GNMA)                                                            ***
+purchaser_type_nameLife insurance company, credit union, mortgage bank, or finance company      ***
+purchaser_type_nameLoan was not originated or was not sold in calendar year covered by register ***
+purchaser_type_nameOther type of purchaser                                                      ***
+purchaser_type_namePrivate securitization                                                       ***
+hud_median_family_income                                                                        ***
+Hispanic_or_Latino                                                                              ***
+Not_Hispanic_or_Latino                                                                          ***
+American_Indian_or_Alaska_Native                                                                ***
+Asian                                                                                           ***
+Black                                                                                           ***
+Native_Hawaiian_or_P.Islander                                                                   ***
+loan_amount_000s                                                                                ***
+minority_population                                                                             ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4192 on 361666 degrees of freedom
+Multiple R-squared:  0.2854,	Adjusted R-squared:  0.2854 
+F-statistic:  8025 on 18 and 361666 DF,  p-value: < 2.2e-16
+
+
