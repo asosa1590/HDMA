@@ -353,6 +353,16 @@ F-statistic: 30.75 on 72 and 361612 DF,  p-value: < 2.2e-16
 
 
 
+`````
+
+
+Regression where  Loan Approval is the dependent variable 
+
+
+`````
+
+
+
 
  purchaserregression <- lm(Loan_Approved ~ purchaser_type_name + hud_median_family_income + Hispanic_or_Latino + Not_Hispanic_or_Latino + American_Indian_or_Alaska_Native + Asian + Black + Native_Hawaiian_or_P.Islander + loan_amount_000s + minority_population )
 > summary(purchaserregression)
@@ -547,5 +557,98 @@ Residual Std. Error                                                             
 F Statistic                                                                                     8,025.088*** (df = 18; 361666)
 ==============================================================================================================================
 Note:                                                                                              *p<0.1; **p<0.05; ***p<0.01
+
+````
+
+Regression where income is the dependent variable 
+
+````
+
+Call:
+lm(formula = applicant_income_000s ~ population + minority_population + 
+    White + Male + Female + Hispanic_or_Latino + Not_Hispanic_or_Latino + 
+    American_Indian_or_Alaska_Native + Asian + Black + Native_Hawaiian_or_P.Islander)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-133.65  -39.94  -11.14   28.76  195.09 
+
+Coefficients:
+                                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       8.909e+01  3.741e-01 238.156  < 2e-16 ***
+population                        2.058e-03  4.781e-05  43.045  < 2e-16 ***
+minority_population               1.095e-01  3.619e-03  30.245  < 2e-16 ***
+White                            -4.479e+00  5.304e-01  -8.444  < 2e-16 ***
+Male                              8.901e+00  5.070e-01  17.559  < 2e-16 ***
+Female                           -5.081e+00  5.172e-01  -9.824  < 2e-16 ***
+Hispanic_or_Latino               -9.324e+00  6.349e-01 -14.687  < 2e-16 ***
+Not_Hispanic_or_Latino           -2.907e+00  5.749e-01  -5.057 4.26e-07 ***
+American_Indian_or_Alaska_Native -1.658e+01  1.384e+00 -11.979  < 2e-16 ***
+Asian                             2.461e+00  6.130e-01   4.014 5.96e-05 ***
+Black                            -1.286e+01  6.208e-01 -20.718  < 2e-16 ***
+Native_Hawaiian_or_P.Islander    -7.986e+00  1.666e+00  -4.795 1.63e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 53.63 on 361673 degrees of freedom
+Multiple R-squared:  0.02631,	Adjusted R-squared:  0.02628 
+F-statistic: 888.6 on 11 and 361673 DF,  p-value: < 2.2e-16
+
+> stargazer(incomeregression, type = 'text')
+
+=============================================================
+                                     Dependent variable:     
+                                 ----------------------------
+                                    applicant_income_000s    
+-------------------------------------------------------------
+population                                 0.002***          
+                                          (0.00005)          
+                                                             
+minority_population                        0.109***          
+                                           (0.004)           
+                                                             
+White                                     -4.479***          
+                                           (0.530)           
+                                                             
+Male                                       8.901***          
+                                           (0.507)           
+                                                             
+Female                                    -5.081***          
+                                           (0.517)           
+                                                             
+Hispanic_or_Latino                        -9.324***          
+                                           (0.635)           
+                                                             
+Not_Hispanic_or_Latino                    -2.907***          
+                                           (0.575)           
+                                                             
+American_Indian_or_Alaska_Native          -16.580***         
+                                           (1.384)           
+                                                             
+Asian                                      2.461***          
+                                           (0.613)           
+                                                             
+Black                                     -12.861***         
+                                           (0.621)           
+                                                             
+Native_Hawaiian_or_P.Islander             -7.986***          
+                                           (1.666)           
+                                                             
+Constant                                  89.089***          
+                                           (0.374)           
+                                                             
+-------------------------------------------------------------
+Observations                               361,685           
+R2                                          0.026            
+Adjusted R2                                 0.026            
+Residual Std. Error                  53.630 (df = 361673)    
+F Statistic                      888.576*** (df = 11; 361673)
+=============================================================
+Note:                             *p<0.1; **p<0.05; ***p<0.01
+
+
+````
+
+
 
 
