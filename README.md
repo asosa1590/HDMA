@@ -476,3 +476,76 @@ Multiple R-squared:  0.2854,	Adjusted R-squared:  0.2854
 F-statistic:  8025 on 18 and 361666 DF,  p-value: < 2.2e-16
 
 
+
+==============================================================================================================================
+                                                                                                     Dependent variable:      
+                                                                                                ------------------------------
+                                                                                                        Loan_Approved         
+------------------------------------------------------------------------------------------------------------------------------
+purchaser_type_nameCommercial bank, savings bank or savings association                                    0.134***           
+                                                                                                           (0.006)            
+                                                                                                                              
+purchaser_type_nameFannie Mae (FNMA)                                                                      -0.042***           
+                                                                                                           (0.006)            
+                                                                                                                              
+purchaser_type_nameFarmer Mac (FAMC)                                                                        0.103             
+                                                                                                           (0.188)            
+                                                                                                                              
+purchaser_type_nameFreddie Mac (FHLMC)                                                                    -0.045***           
+                                                                                                           (0.006)            
+                                                                                                                              
+purchaser_type_nameGinnie Mae (GNMA)                                                                      -0.071***           
+                                                                                                           (0.006)            
+                                                                                                                              
+purchaser_type_nameLife insurance company, credit union, mortgage bank, or finance company                 0.128***           
+                                                                                                           (0.006)            
+                                                                                                                              
+purchaser_type_nameLoan was not originated or was not sold in calendar year covered by register           -0.479***           
+                                                                                                           (0.006)            
+                                                                                                                              
+purchaser_type_nameOther type of purchaser                                                                 0.109***           
+                                                                                                           (0.007)            
+                                                                                                                              
+purchaser_type_namePrivate securitization                                                                  0.046***           
+                                                                                                           (0.014)            
+                                                                                                                              
+hud_median_family_income                                                                                 -0.00000***          
+                                                                                                          (0.00000)           
+                                                                                                                              
+Hispanic_or_Latino                                                                                         0.172***           
+                                                                                                           (0.003)            
+                                                                                                                              
+Not_Hispanic_or_Latino                                                                                     0.224***           
+                                                                                                           (0.002)            
+                                                                                                                              
+American_Indian_or_Alaska_Native                                                                          -0.055***           
+                                                                                                           (0.010)            
+                                                                                                                              
+Asian                                                                                                      0.057***           
+                                                                                                           (0.003)            
+                                                                                                                              
+Black                                                                                                     -0.055***           
+                                                                                                           (0.003)            
+                                                                                                                              
+Native_Hawaiian_or_P.Islander                                                                             -0.046***           
+                                                                                                           (0.012)            
+                                                                                                                              
+loan_amount_000s                                                                                         -0.00004***          
+                                                                                                          (0.00000)           
+                                                                                                                              
+minority_population                                                                                       -0.002***           
+                                                                                                          (0.00003)           
+                                                                                                                              
+Constant                                                                                                   0.809***           
+                                                                                                           (0.007)            
+                                                                                                                              
+------------------------------------------------------------------------------------------------------------------------------
+Observations                                                                                               361,685            
+R2                                                                                                          0.285             
+Adjusted R2                                                                                                 0.285             
+Residual Std. Error                                                                                  0.419 (df = 361666)      
+F Statistic                                                                                     8,025.088*** (df = 18; 361666)
+==============================================================================================================================
+Note:                                                                                              *p<0.1; **p<0.05; ***p<0.01
+
+
