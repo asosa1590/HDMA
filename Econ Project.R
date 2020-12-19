@@ -1,5 +1,5 @@
 getwd()
-setwd("/Users/mirajulfahim/Downloads/ecob2000_lecture1/Econometrics Project")
+setwd("/Users/AntonioSosa/Downloads/ecob2000_lecture1/Econometrics Project")
 
 library(foreign)
 x<-read.csv("/Users/mirajulfahim/Downloads/hmda_2017_ny_all-records_labels.csv")
