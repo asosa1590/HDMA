@@ -1,3 +1,6 @@
+```
+
+
 collateralregression <- lm(Collateral ~ Black + Asian +American_Indian_or_Alaska_Native + White + Male + Female + Hispanic_or_Latino + applicant_income_000s + loan_purpose_name + minority_population, data = dfna)
 
 summary(collateralregression)
