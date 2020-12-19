@@ -10,8 +10,7 @@ https://rpubs.com/mirajulfahim8/705952
 ```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
 
-getwd()
-setwd("/Users/mirajulfahim/Downloads/ecob2000_lecture1/Econometrics Project")
+attach(dfna)
 
 library(foreign)
 x<-read.csv("/Users/mirajulfahim/Downloads/ecob2000_lecture1/HTML 2/hmda_2017_ny_all-records_labels.csv")
