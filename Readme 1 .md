@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 attach(dfna)
 
 library(foreign)
-x<-read.csv("/Users/mirajulfahim/Downloads/ecob2000_lecture1/HTML 2/hmda_2017_ny_all-records_labels.csv")
+
 
 
 
